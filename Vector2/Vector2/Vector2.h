@@ -4,7 +4,7 @@
 /// of type T in the form of coordinate
 /// geometry. The ideal variable types
 /// are int, float and double. They're
-/// types are defined as Vector2I/F/D.
+/// types are defined as Vector2i/f/d.
 ///</summary>
 ///<Date>
 /// 05/10/2018
@@ -51,9 +51,50 @@ namespace jk
 		/// <param name="v">Vector2 to overload x and y with.</param>
 		Vector2(const Vector2& v) :
 			x(v.x), y(v.y) {};
+
+		/// <summary>
+		/// Equals operator
+		/// 
+		/// Assigns x and y variables to param's
+		/// x and y variables.
+		/// </summary>
+		/// <param name="v">Vector2 parameter.</param>
+		/// <returns>This Vector2 Object.</returns>
+		Vector2& operator=(const Vector2& v)
+		{
+			x = v.x;
+			y = v.y;
+			return *this;
+		}
+
+		/// <summary>
+		/// Addition operator
+		/// 
+		/// Adds two vectors together and returns
+		/// the result as a Vector2.
+		/// </summary>
+		/// <param name="r">Vector2 to be added.</param>
+		/// <returns>A Vector2 object.</returns>
+		Vector2 operator+(const Vector2 r) const
+		{
+			return Vector2(x + r.x, y + r.y);
+		}
+
+		/// <summary>
+		/// Subtract operator
+		/// 
+		/// Subtracts two vectors and returns
+		/// the result as a Vector2.
+		/// </summary>
+		/// <param name="r">Vector2 to be subtracted.</param>
+		/// <returns>A Vector2 object.</returns>
+		Vector2 operator-(const Vector2 r)
+		{
+			return Vector2(x - r.x, y - r.y);
+		}
 	};
 
-	typedef Vector2<int> Vector2I;
-	typedef Vector2<float> Vector2F;
-	typedef Vector2<double> Vector2D;
+	typedef Vector2<int> Vector2i;
+	typedef Vector2<float> Vector2f;
+	typedef Vector2<double> Vector2d;
 }
