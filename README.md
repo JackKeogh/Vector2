@@ -28,3 +28,24 @@ This operator adds the x and y values of two Vector2 objects and returns a new V
 ### - Operator
 Vector2 operator-(const Vector2 r)<br />
 This operator subtracts the values of 'r' from the Vector2 object on the left.
+
+### / Operator
+Vector2 operator/(const Vector2 r)<br/>
+This operator divides the vector on the left by the vector on the right and returns a new Vector2
+object.
+
+### * Operator
+Vector2 operator*(const Vector2 r)<br />
+This operator multiplies the vector on the left by the vector on the right and returns a new Vector2
+object.
+
+
+## Predefined Types
+### Vector2i
+Vector2 object that stores the x and y variables as integers.
+
+### Vector2f
+Vector2 object that stores the x and y variables as floating point numbers.
+
+### Vector2d
+Vector2 object that stores the x and y variables as doubles.
