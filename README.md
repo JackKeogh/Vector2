@@ -39,6 +39,11 @@ Vector2 operator*(const Vector2 r)<br />
 This operator multiplies the vector on the left by the vector on the right and returns a new Vector2
 object.
 
+### += Operator
+Vector2 operator+=(const Vector2 r)<br />
+This operator adds the vector on the right to the vector on the left and assigns the vector on the left
+the new values.
+
 
 ## Predefined Types
 ### Vector2i
