@@ -92,6 +92,32 @@ namespace jk
 		{
 			return Vector2(x - r.x, y - r.y);
 		}
+
+		/// <summary>
+		/// Division operator
+		/// 
+		/// Divides the left vector by the right vector
+		/// and returns the result as a Vector2 object.
+		/// </summary>
+		/// <param name="r">Vector2 to use to divide by.</param>
+		/// <returns>A Vector2 object.</returns>
+		Vector2 operator/(const Vector2 r)
+		{
+			return Vector2(x / r.x, y / r.y);
+		}
+
+		/// <summary>
+		/// Multiplyer operator
+		/// 
+		/// Multiples the left vector by the right vector
+		/// and returns the result as a Vector2 object.
+		/// </summary>
+		/// <param name="r">Vector2 to multiply by.</param>
+		/// <returns>A Vector2 object.</returns>
+		Vector2 operator*(const Vector2 r)
+		{
+			return Vector2(x * r.x, y * r.y);
+		}
 	};
 
 	typedef Vector2<int> Vector2i;
