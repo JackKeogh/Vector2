@@ -1,5 +1,0 @@
-﻿  stdafx.cpp
-c:\users\jack\onedrive\desktop\projects\vector2\vector2\vector2\vector2_unit_test\stdafx.cpp(12): warning C4002: too many arguments for function-like macro invocation 'TEST_CLASS'
-  unittest1.cpp
-     Creating library C:\Users\jack\OneDrive\Desktop\Projects\Vector2\Vector2\Vector2\Debug\Vector2_Unit_Test.lib and object C:\Users\jack\OneDrive\Desktop\Projects\Vector2\Vector2\Vector2\Debug\Vector2_Unit_Test.exp
-  Vector2_Unit_Test.vcxproj -> C:\Users\jack\OneDrive\Desktop\Projects\Vector2\Vector2\Vector2\Debug\Vector2_Unit_Test.dll
