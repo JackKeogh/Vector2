@@ -118,6 +118,22 @@ namespace jk
 		{
 			return Vector2(x * r.x, y * r.y);
 		}
+
+		/// <summary>
+		/// Add and Assign operator
+		/// 
+		/// Adds the right Vector2 to the left Vector2
+		/// and returns the left Vector2 object.
+		/// </summary>
+		/// <param name="r">Vector2 to add by.</param>
+		/// <returns>This Vector2 Object.</returns>
+		Vector2& operator+=(const Vector2 r)
+		{
+			x += r.x;
+			y += r.y;
+
+			return *this;
+		}
 	};
 
 	typedef Vector2<int> Vector2i;
