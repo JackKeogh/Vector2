@@ -75,7 +75,7 @@ namespace jk
 		/// </summary>
 		/// <param name="r">Vector2 to be added.</param>
 		/// <returns>A Vector2 object.</returns>
-		Vector2 operator+(const Vector2 r) const
+		Vector2 operator+(const Vector2& r) const
 		{
 			return Vector2(x + r.x, y + r.y);
 		}
@@ -88,7 +88,7 @@ namespace jk
 		/// </summary>
 		/// <param name="r">Vector2 to be subtracted.</param>
 		/// <returns>A Vector2 object.</returns>
-		Vector2 operator-(const Vector2 r)
+		Vector2 operator-(const Vector2& r)
 		{
 			return Vector2(x - r.x, y - r.y);
 		}
@@ -101,7 +101,7 @@ namespace jk
 		/// </summary>
 		/// <param name="r">Vector2 to use to divide by.</param>
 		/// <returns>A Vector2 object.</returns>
-		Vector2 operator/(const Vector2 r)
+		Vector2 operator/(const Vector2& r)
 		{
 			return Vector2(x / r.x, y / r.y);
 		}
@@ -114,7 +114,7 @@ namespace jk
 		/// </summary>
 		/// <param name="r">Vector2 to multiply by.</param>
 		/// <returns>A Vector2 object.</returns>
-		Vector2 operator*(const Vector2 r)
+		Vector2 operator*(const Vector2& r)
 		{
 			return Vector2(x * r.x, y * r.y);
 		}
@@ -127,10 +127,58 @@ namespace jk
 		/// </summary>
 		/// <param name="r">Vector2 to add by.</param>
 		/// <returns>This Vector2 Object.</returns>
-		Vector2& operator+=(const Vector2 r)
+		Vector2& operator+=(const Vector2& r)
 		{
 			x += r.x;
 			y += r.y;
+
+			return *this;
+		}
+
+		/// <summary>
+		/// Subtract and Assign operator
+		/// 
+		/// Subtracts the right Vector2 from the left 
+		/// Vector2 and returns the left Vector2 object.
+		/// </summary>
+		/// <param name="r">Vector2 to subtract by.</param>
+		/// <returns>This Vector2 Object.</returns>
+		Vector2& operator-=(const Vector2& r)
+		{
+			x -= r.x;
+			y -= r.y;
+
+			return *this;
+		}
+
+		/// <summary>
+		/// Divide and Assign operator
+		/// 
+		/// Divides the right Vector2 from the left Vector2
+		/// and returns the left Vector2 object.
+		/// </summary>
+		/// <param name="r">Vector2 to divide by.</param>
+		/// <returns>This Vector2 Object.</returns>
+		Vector2& operator/=(const Vector2& r)
+		{
+			x /= r.x;
+			y /= r.y;
+
+			return *this;
+		}
+
+		/// <summary>
+		/// Multiply and Assign operator
+		/// 
+		/// Multiplies the left Vector2 by the right Vector2
+		/// and returns the left Vector2 object.
+		/// </summary>
+		/// <param name="r">Vector2 to multiply by.</param>
+		/// <returns>This Vector2 Object.</returns>
+		Vector2& operator*=(const Vector2& r)
+		{
+			x *= r.x;
+			y *= r.y;
 
 			return *this;
 		}
