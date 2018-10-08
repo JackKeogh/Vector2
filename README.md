@@ -69,6 +69,25 @@ Vector2& operator*=(const float r)<br />
 This operator multiplies the x and y values of a vector by r, a floating point number and assigns
 the vector the new values.
 
+### == Operator
+bool operator==(const Vector2& r)<br />
+This operator compares the left vector to the right vector and returns a bool statement, true if
+they are equal or false if they are not equal.
+
+### != Operator
+bool operator!=(const Vector2& r)<br />
+This operator compares the left vector to the right vector and returns a bool statement, true if
+they are not equal or false if they are equal.
+
+## Functions
+### Normalise
+Vector2& Normalise()<br />
+This function normalises the vector and sets its values to the normalised values.
+
+### Magnitude
+float Magnitude()<br />
+This function calculates the size of vector and returns a floating point number.
+
 ## Predefined Types
 ### Vector2i
 Vector2 object that stores the x and y variables as integers.
