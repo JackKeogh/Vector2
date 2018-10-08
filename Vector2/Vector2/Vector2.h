@@ -120,6 +120,19 @@ namespace jk
 		}
 
 		/// <summary>
+		/// Scalar operator
+		/// 
+		/// Multiplies the left vector by right floating point number
+		/// and returns the result as a Vector2 object.
+		/// </summary>
+		/// <param name="r">Floating point number to multiply by.</param>
+		/// <returns>A Vector2 object.</returns>
+		Vector2 operator*(const float r)
+		{
+			return Vector2(x * r, y * r);
+		}
+
+		/// <summary>
 		/// Add and Assign operator
 		/// 
 		/// Adds the right Vector2 to the left Vector2
@@ -179,6 +192,14 @@ namespace jk
 		{
 			x *= r.x;
 			y *= r.y;
+
+			return *this;
+		}
+
+		Vector2& operator*=(const float r)
+		{
+			x *= r;
+			y *= r;
 
 			return *this;
 		}
