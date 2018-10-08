@@ -39,6 +39,11 @@ Vector2 operator*(const Vector2& r)<br />
 This operator multiplies the vector on the left by the vector on the right and returns a new Vector2
 object.
 
+### * Operator
+Vector2 operator*(const float r)<br />
+This operator multiplies the x and y values of a vector by r, a floating point number and returns
+a new Vector2 object.
+
 ### += Operator
 Vector2 operator+=(const Vector2& r)<br />
 This operator adds the vector on the right to the vector on the left and assigns the vector on the left
@@ -50,15 +55,19 @@ This operator subtracts the vector on the right from the vector on the left and 
 on the left the new values.
 
 ### /= Operator
-Vector& operator/=(const Vector2& r)<br />
+Vector2& operator/=(const Vector2& r)<br />
 This operator divides the vector on the right from the vector on the right and assigns the vector
 on the left the new values.
 
 ### *= Operator
-Vector& operator*=(const Vector2& r)<br />
+Vector2& operator*=(const Vector2& r)<br />
 This operator multiples the vector on the left by the vector on the right and assigns the vector
 on the left the new values.
 
+### *= Operator
+Vector2& operator*=(const float r)<br />
+This operator multiplies the x and y values of a vector by r, a floating point number and assigns
+the vector the new values.
 
 ## Predefined Types
 ### Vector2i
