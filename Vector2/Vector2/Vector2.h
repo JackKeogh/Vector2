@@ -196,6 +196,14 @@ namespace jk
 			return *this;
 		}
 
+		/// <summary>
+		/// Scalar operator
+		/// 
+		/// Multiplies the left vector by the right floating point number
+		/// and returns the left Vector2 object.
+		/// </summary>
+		/// <param name="r">Floating point number to multiply by.</param>
+		/// <returns>A Vector2 object.</returns>
 		Vector2& operator*=(const float r)
 		{
 			x *= r;
@@ -203,6 +211,45 @@ namespace jk
 
 			return *this;
 		}
+
+		/// <summary>
+		/// Equate operator
+		/// 
+		/// Checks if the left vector equals the right vector.
+		/// </summary>
+		/// <param name="r">Vector2 to compare.</param>
+		/// <returns>A True or False Statement.</returns>
+		bool operator==(const Vector2& r)
+		{
+			if (x == r.x && y == r.y)
+				return true;
+			else
+				return false;
+		}
+
+		/// <summary>
+		/// Inequate operator
+		/// 
+		/// Checks if the left vector does not equal the right vector.
+		/// </summary>
+		/// <param name="r">Vector2 to compare.</param>
+		/// <returns>A True or False Statement.</returns>
+		bool operator!=(const Vector2& r)
+		{
+			return !(*this == r);
+		}
+
+		/// <summary>
+		/// Normalises the Vector2 object.
+		/// </summary>
+		/// <returns>A normalised Vector2 Object.</returns>
+		Vector2& Normalise();
+
+		/// <summary>
+		/// Returns the size of the vector.
+		/// </summary>
+		/// <returns>A floating point value.</returns>
+		float Magnitude();
 	};
 
 	typedef Vector2<int> Vector2i;
