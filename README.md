@@ -2,6 +2,15 @@
 
 Source code for a 2D vector library (.lib and .dll).
 
+## How to use
+- Navigate to the Vector2 folder.
+- Navigate to the x64 folder.
+- Navigate to the release folder.
+- Extract the .dll and .lib file.
+- Return to the Vector2 folder.
+- Navigate to the next Vector2 folder.
+- Extract Vector2.h file.
+
 ## Constructor Methods
 ### Default Constructor
 Vector2() : x(0), y(0)<br />
